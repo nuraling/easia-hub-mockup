@@ -1,0 +1,5 @@
+run = "npx serve dist -s -l 5000"
+
+[deployment]
+build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npx serve dist -s -l 5000"]
