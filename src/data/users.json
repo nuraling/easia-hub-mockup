@@ -1,0 +1,77 @@
+{
+  "users": {
+    "public": {
+      "id": "public",
+      "name": "Visitor",
+      "role": "public",
+      "email": null,
+      "market": null,
+      "company": null,
+      "hubspotId": null,
+      "language": "en"
+    },
+    "agent": {
+      "id": "agent-marie",
+      "name": "Marie Dupont",
+      "role": "agent",
+      "email": "marie@voyages-dupont.fr",
+      "market": "french",
+      "company": "Voyages Dupont",
+      "hubspotId": "HS-12345",
+      "language": "fr",
+      "avatar": "MD",
+      "lastLogin": "2026-02-19",
+      "productionPrefs": { "segments": ["Leisure", "Premium"], "destinations": ["vietnam", "cambodia"] }
+    },
+    "internal": {
+      "id": "internal-thomas",
+      "name": "Thomas Weber",
+      "role": "internal",
+      "email": "thomas@easia-travel.com",
+      "market": "german",
+      "company": "Easia Travel",
+      "hubspotId": null,
+      "language": "en",
+      "avatar": "TW",
+      "department": "Sales",
+      "lastLogin": "2026-02-20"
+    }
+  },
+  "activityLog": [
+    { "userId": "agent-marie", "action": "login", "timestamp": "2026-02-19T09:00:00Z" },
+    { "userId": "agent-marie", "action": "view_product", "target": "halong-bay-cruise", "timestamp": "2026-02-19T09:05:00Z" },
+    { "userId": "agent-marie", "action": "download_media", "target": "m001", "timestamp": "2026-02-19T09:10:00Z" },
+    { "userId": "agent-marie", "action": "view_product", "target": "hoi-an-heritage", "timestamp": "2026-02-19T09:15:00Z" },
+    { "userId": "agent-marie", "action": "search", "query": "beach vietnam", "timestamp": "2026-02-19T09:20:00Z" },
+    { "userId": "agent-marie", "action": "open_koob", "target": "halong-bay-cruise", "timestamp": "2026-02-19T09:25:00Z" },
+    { "userId": "agent-marie", "action": "view_destination", "target": "vietnam", "timestamp": "2026-02-18T14:00:00Z" },
+    { "userId": "agent-marie", "action": "download_media", "target": "m004", "timestamp": "2026-02-18T14:10:00Z" }
+  ],
+  "analyticsData": {
+    "totalViews": 1247,
+    "totalDownloads": 389,
+    "totalSearches": 562,
+    "topSearchTerms": ["vietnam beach", "ha long bay", "mekong delta", "hoi an", "sapa trekking", "cruise vietnam"],
+    "zeroResultTerms": ["bali", "singapore", "maldives"],
+    "marketBreakdown": {
+      "french": { "views": 487, "downloads": 156, "searches": 213 },
+      "german": { "views": 398, "downloads": 121, "searches": 189 },
+      "uk": { "views": 362, "downloads": 112, "searches": 160 }
+    },
+    "topProducts": [
+      { "id": "halong-bay-cruise", "views": 234, "downloads": 67 },
+      { "id": "hoi-an-heritage", "views": 198, "downloads": 45 },
+      { "id": "mekong-delta-explorer", "views": 167, "downloads": 52 },
+      { "id": "sapa-trekking", "views": 145, "downloads": 38 },
+      { "id": "phu-quoc-beach", "views": 132, "downloads": 41 }
+    ],
+    "weeklyTrend": [
+      { "week": "Jan 20", "views": 145, "downloads": 38 },
+      { "week": "Jan 27", "views": 168, "downloads": 45 },
+      { "week": "Feb 3", "views": 192, "downloads": 52 },
+      { "week": "Feb 10", "views": 215, "downloads": 61 },
+      { "week": "Feb 17", "views": 289, "downloads": 87 },
+      { "week": "Feb 24", "views": 238, "downloads": 106 }
+    ]
+  }
+}
