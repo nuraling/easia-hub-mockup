@@ -3,9 +3,7 @@ entrypoint = "src/main.jsx"
 
 [nix]
 channel = "stable-24_05"
-
-[nix.packages]
-nodejs = "nodejs_20"
+packages = ["nodejs-20_x"]
 
 [deployment]
 build = ["sh", "-c", "npm install && npm run build"]
