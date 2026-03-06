@@ -1,4 +1,11 @@
 run = "npm start"
+entrypoint = "src/main.jsx"
+
+[nix]
+channel = "stable-24_05"
+
+[nix.packages]
+nodejs = "nodejs_20"
 
 [deployment]
 build = ["sh", "-c", "npm install && npm run build"]
